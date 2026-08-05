@@ -69,8 +69,8 @@ Redis is optional — if `REDIS_URL` is not set, the app starts a built-in local
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/Abhitkumar89/Track_Live.git
+cd Track_Live
 ```
 
 ### 2. Install dependencies
@@ -122,7 +122,7 @@ Open the same URL in another browser / device to see multiple live markers.
 ├── public/
 │   ├── css/style.css
 │   └── js/script.js       # Geolocation + Leaflet + Socket.IO client
-├── .env.example           # Safe env template (commit this)
+├── .env.example
 ├── .gitignore
 └── package.json
 ```
@@ -137,8 +137,6 @@ Open the same URL in another browser / device to see multiple live markers.
 | `PORT` | No | Server port (default `3000`) |
 | `REDIS_URL` | No | Redis URL; if omitted, uses built-in local Redis |
 
-> **Never commit `.env`.** Only `.env.example` belongs in the repo.
-
 ---
 
 ## 📸 Demo tips
@@ -150,12 +148,6 @@ Open the same URL in another browser / device to see multiple live markers.
 
 ---
 
-## 🧾 Resume-friendly summary
-
-> Built a real-time multi-user GPS tracker with **Node.js**, **Express**, and **Socket.IO**, broadcasting live browser geolocation to connected clients. Used **Redis** for live user sessions and **MongoDB** with **GeoJSON (`2dsphere`)** indexing for location history, visualized on a **Leaflet** map.
-
----
-
 ## 📝 License
 
-ISC
+MIT
